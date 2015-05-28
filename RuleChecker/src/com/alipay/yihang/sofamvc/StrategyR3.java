@@ -10,7 +10,7 @@ package com.alipay.yihang.sofamvc;
     replyDate;representment; partialRepresentment; settleAmount;settleCurrency; alipayDueAmount;
     merchantDueAmount;alipayPaidAmount; merchantPaidAmount;fee;operator;deleteCheck;uniqKey;
  */
-public class StrategyA implements Strategy {
+public class StrategyR3 implements Strategy {
     @Override
     public ErrorWrapper rulesCheck(OfflineRiskDatumDO DO) {
 

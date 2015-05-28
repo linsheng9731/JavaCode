@@ -23,15 +23,210 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/Main.java">
+      <file leaf-file-name="Strategy2.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/Strategy2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding>
-                <element signature="e#100#101#0" expanded="true" />
-                <element signature="e#150#151#0" expanded="true" />
-              </folding>
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Strategy1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/Strategy1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JAVA/com.alipay.yihang.sofamvc" pinned="false" current-in-tab="true">
+        <entry file="uml://JAVA/com.alipay.yihang.sofamvc">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>com.alipay.yihang.sofamvc</OriginalElement>
+              <nodes>
+                <node x="1188.0" y="310.0">com.alipay.yihang.sofamvc.StrategyZC</node>
+                <node x="234.0" y="310.0">com.alipay.yihang.sofamvc.Strategy3</node>
+                <node x="659.5930397727273" y="390.0">com.alipay.yihang.sofamvc.StrategyTest</node>
+                <node x="581.0" y="310.0">com.alipay.yihang.sofamvc.StrategyL</node>
+                <node x="532.0" y="80.0">com.alipay.yihang.sofamvc.Strategy</node>
+                <node x="1310.0" y="310.0">com.alipay.yihang.sofamvc.OfflineRiskDatumDO</node>
+                <node x="1048.0" y="310.0">com.alipay.yihang.sofamvc.Strategy_H_W</node>
+                <node x="468.0" y="310.0">com.alipay.yihang.sofamvc.StrategyR</node>
+                <node x="693.0" y="310.0">com.alipay.yihang.sofamvc.Strategy2</node>
+                <node x="0.0" y="310.0">com.alipay.yihang.sofamvc.Strategy1</node>
+                <node x="637.0" y="80.0">com.alipay.yihang.sofamvc.Checker</node>
+                <node x="113.0" y="310.0">com.alipay.yihang.sofamvc.StrategyR3</node>
+                <node x="622.0" y="0.0">com.alipay.yihang.sofamvc.ErrorWrapper</node>
+                <node x="347.0" y="310.0">com.alipay.yihang.sofamvc.StrategyR0</node>
+                <node x="806.0" y="310.0">com.alipay.yihang.sofamvc.StrategyR1</node>
+                <node x="927.0" y="310.0">com.alipay.yihang.sofamvc.StrategyTZ</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="com.alipay.yihang.sofamvc.Strategy_H_W" target="com.alipay.yihang.sofamvc.Strategy">
+                  <point x="-30.0" y="-15.0" />
+                  <point x="1078.0" y="160.0" />
+                  <point x="605.4090909090909" y="160.0" />
+                  <point x="30.909090909090878" y="15.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.StrategyR0" target="com.alipay.yihang.sofamvc.Checker">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.StrategyTZ" target="com.alipay.yihang.sofamvc.Checker">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.StrategyR3" target="com.alipay.yihang.sofamvc.Strategy">
+                  <point x="-25.25" y="-15.0" />
+                  <point x="138.25" y="200.0" />
+                  <point x="543.5909090909091" y="200.0" />
+                  <point x="-30.909090909090878" y="15.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.StrategyR0" target="com.alipay.yihang.sofamvc.Strategy">
+                  <point x="-25.25" y="-15.0" />
+                  <point x="372.25" y="220.0" />
+                  <point x="559.0454545454545" y="220.0" />
+                  <point x="-15.454545454545496" y="15.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.StrategyZC" target="com.alipay.yihang.sofamvc.Strategy">
+                  <point x="-25.5" y="-15.0" />
+                  <point x="1213.5" y="140.0" />
+                  <point x="613.1363636363636" y="140.0" />
+                  <point x="38.636363636363626" y="15.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.StrategyTest" target="com.alipay.yihang.sofamvc.Strategy1">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.Strategy1" target="com.alipay.yihang.sofamvc.Checker">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.StrategyR3" target="com.alipay.yihang.sofamvc.Checker">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.Strategy3" target="com.alipay.yihang.sofamvc.Checker">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.Strategy2" target="com.alipay.yihang.sofamvc.Strategy">
+                  <point x="-23.25" y="-15.0" />
+                  <point x="716.25" y="220.0" />
+                  <point x="582.2272727272727" y="220.0" />
+                  <point x="7.727272727272748" y="15.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.Strategy_H_W" target="com.alipay.yihang.sofamvc.Checker">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.StrategyR1" target="com.alipay.yihang.sofamvc.Strategy">
+                  <point x="-25.25" y="-15.0" />
+                  <point x="831.25" y="200.0" />
+                  <point x="589.9545454545455" y="200.0" />
+                  <point x="15.454545454545496" y="15.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.StrategyL" target="com.alipay.yihang.sofamvc.Checker">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.StrategyR1" target="com.alipay.yihang.sofamvc.Checker">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.StrategyR" target="com.alipay.yihang.sofamvc.Strategy">
+                  <point x="-23.25" y="-15.0" />
+                  <point x="491.25" y="230.0" />
+                  <point x="566.7727272727273" y="230.0" />
+                  <point x="-7.727272727272748" y="15.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.StrategyZC" target="com.alipay.yihang.sofamvc.Checker">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.StrategyTZ" target="com.alipay.yihang.sofamvc.Strategy">
+                  <point x="-25.25" y="-15.0" />
+                  <point x="952.25" y="180.0" />
+                  <point x="597.6818181818182" y="180.0" />
+                  <point x="23.181818181818244" y="15.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.StrategyR" target="com.alipay.yihang.sofamvc.Checker">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.StrategyTest" target="com.alipay.yihang.sofamvc.OfflineRiskDatumDO">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.Strategy3" target="com.alipay.yihang.sofamvc.Strategy">
+                  <point x="-23.25" y="-15.0" />
+                  <point x="257.25" y="210.0" />
+                  <point x="551.3181818181819" y="210.0" />
+                  <point x="-23.18181818181813" y="15.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.StrategyL" target="com.alipay.yihang.sofamvc.Strategy">
+                  <point x="-23.0" y="-15.0" />
+                  <point x="604.0" y="230.0" />
+                  <point x="574.5" y="230.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.Strategy2" target="com.alipay.yihang.sofamvc.Checker">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.Checker" target="com.alipay.yihang.sofamvc.ErrorWrapper">
+                  <point x="0.0" y="0.0" />
+                  <point x="0.0" y="0.0" />
+                </edge>
+                <edge source="com.alipay.yihang.sofamvc.Strategy1" target="com.alipay.yihang.sofamvc.Strategy">
+                  <point x="-23.25" y="-15.0" />
+                  <point x="23.25" y="190.0" />
+                  <point x="535.8636363636364" y="190.0" />
+                  <point x="-38.636363636363626" y="15.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.6417112299465241" x="738.0" y="210.0" />
+              <SelectedNodes />
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StrategyL.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyL.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StrategyR0.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyR0.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StrategyR1.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyR1.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -40,50 +235,37 @@
         <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Checker.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/Checker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0">
-              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-              <folding>
-                <element signature="e#354#355#0" expanded="true" />
-                <element signature="e#384#385#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StrategyA.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyA.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8176101">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ErrorWrapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/ErrorWrapper.java">
+      <file leaf-file-name="StrategyTZ.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyTZ.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RuleChecker.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RuleChecker.iml">
+      <file leaf-file-name="StrategyZC.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyZC.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StrategyR3.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyR3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -100,15 +282,33 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/OfflineRiskDatumDO.java" />
+        <option value="$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyTest.java" />
         <option value="$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/Checker.java" />
         <option value="$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyA.java" />
-        <option value="$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyTest.java" />
+        <option value="$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/Strategy1.java" />
+        <option value="$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/Strategy2.java" />
+        <option value="$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/Strategy3.java" />
+        <option value="$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyR0.java" />
+        <option value="$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyR1.java" />
+        <option value="$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyR3.java" />
+        <option value="$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyR.java" />
+        <option value="$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyTZ.java" />
+        <option value="$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyZC.java" />
+        <option value="$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyL.java" />
+        <option value="$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/Strategy_H_W.java" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
   </component>
   <component name="NamedScopeManager">
     <order />
@@ -189,6 +389,12 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.alipay.yihang.sofamvc" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.StrategyTest">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
@@ -464,18 +670,21 @@
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ef188b95-6d1e-40a0-b997-3e8c6c52f88e" name="Default" comment="" />
       <created>1432709059579</created>
       <option name="number" value="Default" />
       <updated>1432709059579</updated>
-      <workItem from="1432709062863" duration="2325000" />
+      <workItem from="1432709062863" duration="6365000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2325000" />
+    <option name="totallyTimeSpent" value="6365000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -507,6 +716,14 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -519,21 +736,18 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/Main.java">
+    <entry file="file://$PROJECT_DIR$/RuleChecker.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#100#101#0" expanded="true" />
-            <element signature="e#150#151#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.062893085">
+          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RuleChecker.iml">
+    <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/OfflineRiskDatumDO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="39" selection-start-line="2" selection-start-column="39" selection-end-line="2" selection-end-column="39" />
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -541,44 +755,14 @@
     <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/ErrorWrapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/OfflineRiskDatumDO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5283019">
-          <caret line="246" column="0" selection-start-line="246" selection-start-column="0" selection-end-line="246" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3529#3530#0" expanded="true" />
-            <element signature="e#3557#3558#0" expanded="true" />
-            <element signature="e#3584#3585#0" expanded="true" />
-            <element signature="e#3614#3615#0" expanded="true" />
-            <element signature="e#6382#6383#0" expanded="true" />
-            <element signature="e#6432#6433#0" expanded="true" />
-            <element signature="e#6800#6801#0" expanded="true" />
-            <element signature="e#6848#6849#0" expanded="true" />
-            <element signature="e#8473#8474#0" expanded="true" />
-            <element signature="e#8511#8512#0" expanded="true" />
-            <element signature="e#8545#8546#0" expanded="true" />
-            <element signature="e#8580#8581#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/Strategy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18867925">
+        <state vertical-scroll-proportion="0.0">
           <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
           <folding />
         </state>
@@ -586,20 +770,266 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/Checker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        <state vertical-scroll-proportion="-81.545456">
+          <caret line="299" column="14" selection-start-line="299" selection-start-column="14" selection-end-line="299" selection-end-column="14" />
           <folding>
             <element signature="e#354#355#0" expanded="true" />
             <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#1597#1598#0" expanded="true" />
+            <element signature="e#1627#1628#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyA.java">
+    <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyR.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8176101">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/Strategy3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/Strategy_H_W.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyR1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyR3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyTZ.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyZC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/Strategy2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/Strategy1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyL.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/alipay/yihang/sofamvc/StrategyR0.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/com.alipay.yihang.sofamvc">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>com.alipay.yihang.sofamvc</OriginalElement>
+          <nodes>
+            <node x="1188.0" y="310.0">com.alipay.yihang.sofamvc.StrategyZC</node>
+            <node x="234.0" y="310.0">com.alipay.yihang.sofamvc.Strategy3</node>
+            <node x="659.5930397727273" y="390.0">com.alipay.yihang.sofamvc.StrategyTest</node>
+            <node x="581.0" y="310.0">com.alipay.yihang.sofamvc.StrategyL</node>
+            <node x="532.0" y="80.0">com.alipay.yihang.sofamvc.Strategy</node>
+            <node x="1310.0" y="310.0">com.alipay.yihang.sofamvc.OfflineRiskDatumDO</node>
+            <node x="1048.0" y="310.0">com.alipay.yihang.sofamvc.Strategy_H_W</node>
+            <node x="468.0" y="310.0">com.alipay.yihang.sofamvc.StrategyR</node>
+            <node x="693.0" y="310.0">com.alipay.yihang.sofamvc.Strategy2</node>
+            <node x="0.0" y="310.0">com.alipay.yihang.sofamvc.Strategy1</node>
+            <node x="637.0" y="80.0">com.alipay.yihang.sofamvc.Checker</node>
+            <node x="113.0" y="310.0">com.alipay.yihang.sofamvc.StrategyR3</node>
+            <node x="622.0" y="0.0">com.alipay.yihang.sofamvc.ErrorWrapper</node>
+            <node x="347.0" y="310.0">com.alipay.yihang.sofamvc.StrategyR0</node>
+            <node x="806.0" y="310.0">com.alipay.yihang.sofamvc.StrategyR1</node>
+            <node x="927.0" y="310.0">com.alipay.yihang.sofamvc.StrategyTZ</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="com.alipay.yihang.sofamvc.Strategy_H_W" target="com.alipay.yihang.sofamvc.Strategy">
+              <point x="-30.0" y="-15.0" />
+              <point x="1078.0" y="160.0" />
+              <point x="605.4090909090909" y="160.0" />
+              <point x="30.909090909090878" y="15.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.StrategyR0" target="com.alipay.yihang.sofamvc.Checker">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.StrategyTZ" target="com.alipay.yihang.sofamvc.Checker">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.StrategyR3" target="com.alipay.yihang.sofamvc.Strategy">
+              <point x="-25.25" y="-15.0" />
+              <point x="138.25" y="200.0" />
+              <point x="543.5909090909091" y="200.0" />
+              <point x="-30.909090909090878" y="15.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.StrategyR0" target="com.alipay.yihang.sofamvc.Strategy">
+              <point x="-25.25" y="-15.0" />
+              <point x="372.25" y="220.0" />
+              <point x="559.0454545454545" y="220.0" />
+              <point x="-15.454545454545496" y="15.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.StrategyZC" target="com.alipay.yihang.sofamvc.Strategy">
+              <point x="-25.5" y="-15.0" />
+              <point x="1213.5" y="140.0" />
+              <point x="613.1363636363636" y="140.0" />
+              <point x="38.636363636363626" y="15.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.StrategyTest" target="com.alipay.yihang.sofamvc.Strategy1">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.Strategy1" target="com.alipay.yihang.sofamvc.Checker">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.StrategyR3" target="com.alipay.yihang.sofamvc.Checker">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.Strategy3" target="com.alipay.yihang.sofamvc.Checker">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.Strategy2" target="com.alipay.yihang.sofamvc.Strategy">
+              <point x="-23.25" y="-15.0" />
+              <point x="716.25" y="220.0" />
+              <point x="582.2272727272727" y="220.0" />
+              <point x="7.727272727272748" y="15.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.Strategy_H_W" target="com.alipay.yihang.sofamvc.Checker">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.StrategyR1" target="com.alipay.yihang.sofamvc.Strategy">
+              <point x="-25.25" y="-15.0" />
+              <point x="831.25" y="200.0" />
+              <point x="589.9545454545455" y="200.0" />
+              <point x="15.454545454545496" y="15.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.StrategyL" target="com.alipay.yihang.sofamvc.Checker">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.StrategyR1" target="com.alipay.yihang.sofamvc.Checker">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.StrategyR" target="com.alipay.yihang.sofamvc.Strategy">
+              <point x="-23.25" y="-15.0" />
+              <point x="491.25" y="230.0" />
+              <point x="566.7727272727273" y="230.0" />
+              <point x="-7.727272727272748" y="15.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.StrategyZC" target="com.alipay.yihang.sofamvc.Checker">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.StrategyTZ" target="com.alipay.yihang.sofamvc.Strategy">
+              <point x="-25.25" y="-15.0" />
+              <point x="952.25" y="180.0" />
+              <point x="597.6818181818182" y="180.0" />
+              <point x="23.181818181818244" y="15.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.StrategyR" target="com.alipay.yihang.sofamvc.Checker">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.StrategyTest" target="com.alipay.yihang.sofamvc.OfflineRiskDatumDO">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.Strategy3" target="com.alipay.yihang.sofamvc.Strategy">
+              <point x="-23.25" y="-15.0" />
+              <point x="257.25" y="210.0" />
+              <point x="551.3181818181819" y="210.0" />
+              <point x="-23.18181818181813" y="15.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.StrategyL" target="com.alipay.yihang.sofamvc.Strategy">
+              <point x="-23.0" y="-15.0" />
+              <point x="604.0" y="230.0" />
+              <point x="574.5" y="230.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.Strategy2" target="com.alipay.yihang.sofamvc.Checker">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.Checker" target="com.alipay.yihang.sofamvc.ErrorWrapper">
+              <point x="0.0" y="0.0" />
+              <point x="0.0" y="0.0" />
+            </edge>
+            <edge source="com.alipay.yihang.sofamvc.Strategy1" target="com.alipay.yihang.sofamvc.Strategy">
+              <point x="-23.25" y="-15.0" />
+              <point x="23.25" y="190.0" />
+              <point x="535.8636363636364" y="190.0" />
+              <point x="-38.636363636363626" y="15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.6417112299465241" x="738.0" y="210.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
         </state>
       </provider>
     </entry>
