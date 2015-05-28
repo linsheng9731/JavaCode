@@ -11,19 +11,31 @@ public class Checker {
     Object DO;
     Class cls;
 
-    public Checker(Object DO){
+    public Checker(Object DO) {
         this.DO = DO;
         this.cls = this.DO.getClass();
     }
-    public ErrorWrapper getWrapper(){
+
+    public ErrorWrapper getWrapper() {
         return wrapper;
     }
-    public Object getVal(String arg) throws NoSuchFieldException, IllegalAccessException {
 
-        Field field =  this.cls.getDeclaredField(arg);
-        field.setAccessible(true);
-        Object fieldArg = field.get(DO);
-        return fieldArg;
+    public Object getVal(String arg) {
+        try {
+            Field field = this.cls.getDeclaredField(arg);
+            field.setAccessible(true);
+            Object fieldArg = field.get(DO);
+            return fieldArg;
+        } catch (NoSuchFieldException e) {
+            System.out.println(e);
+            // todo
+        } catch (IllegalAccessException e) {
+            System.out.println(e);
+            //todo
+        } finally {
+
+        }
+        return null;
     }
 
     /**
@@ -32,11 +44,11 @@ public class Checker {
      * @param args
      * @return
      */
-    public ErrorWrapper checkNotNull(String... args) throws NoSuchFieldException, IllegalAccessException {
+    public ErrorWrapper checkNotNull(String... args){
 
         for (String arg : args) {
             if (getVal(arg) == null)
-                 wrapper.add(arg+" must not null");
+                wrapper.add(arg + " must not null");
         }
         return wrapper;
     }
@@ -47,10 +59,10 @@ public class Checker {
      * @param args
      * @return
      */
-    public ErrorWrapper checkMustNull(String... args)throws NoSuchFieldException, IllegalAccessException {
+    public ErrorWrapper checkMustNull(String... args){
         for (String arg : args) {
             if (getVal(arg) != null)
-                 wrapper.add(arg+" must be null");
+                wrapper.add(arg + " must be null");
         }
         return wrapper;
     }
@@ -71,9 +83,9 @@ public class Checker {
      * @param args
      * @return
      */
-    public ErrorWrapper checkBoth(String... args)throws NoSuchFieldException, IllegalAccessException {
-        if ((getVal(args[0])!= null && getVal(args[1]) == null) || (getVal(args[0]) == null && getVal(args[1]) != null))
-             wrapper.add(args[0]+" and "+args[1]+" must both be null or both not null");
+    public ErrorWrapper checkBoth(String... args){
+        if ((getVal(args[0]) != null && getVal(args[1]) == null) || (getVal(args[0]) == null && getVal(args[1]) != null))
+            wrapper.add(args[0] + " and " + args[1] + " must both be null or both not null");
         return wrapper;
     }
 
@@ -84,8 +96,8 @@ public class Checker {
      * @return
      */
     public ErrorWrapper checkOr(String... args) {
-        if ((args[0] == null && args[1] == null))
-             wrapper.add(args[0]+" or "+args[1]+" must be not null ");
+        if ((getVal(args[0]) == null && getVal(args[1]) == null))
+            wrapper.add(args[0] + " or " + args[1] + " must be not null ");
         return wrapper;
     }
 
@@ -96,9 +108,10 @@ public class Checker {
      * @return
      */
     public ErrorWrapper checkYYNotNull(String... args) {
-        for (String arg : args) {
-            System.out.println(arg);
-        }
+
+        String a = args[0],b = args[1],c = args[2];
+        if (getVal(a)=="Y"&&getVal(b)=="Y"&&getVal(c)==null)
+            wrapper.add(a+" and "+b+"are both Y,  the "+c+" must be not null ");
         return wrapper;
     }
 
@@ -109,9 +122,9 @@ public class Checker {
      * @return
      */
     public ErrorWrapper checkYNNotNull(String... args) {
-        for (String arg : args) {
-            System.out.println(arg);
-        }
+        String a = args[0],b = args[1],c = args[2];
+        if (getVal(a)=="Y"&&getVal(b)=="N"&&getVal(c)==null)
+            wrapper.add(a+" is "+" Y "+b+" is N,  the "+c+" must be not null ");
         return wrapper;
     }
 
@@ -122,9 +135,9 @@ public class Checker {
      * @return
      */
     public ErrorWrapper checkNYNotNull(String... args) {
-        for (String arg : args) {
-            System.out.println(arg);
-        }
+        String a = args[0],b = args[1],c = args[2];
+        if (getVal(a)=="N"&&getVal(b)=="Y"&&getVal(c)==null)
+            wrapper.add(a+" is "+" N "+b+" is N,  the "+c+" must be not null ");
         return wrapper;
     }
 
@@ -135,9 +148,9 @@ public class Checker {
      * @return
      */
     public ErrorWrapper checkNNNotNull(String... args) {
-        for (String arg : args) {
-            System.out.println(arg);
-        }
+        String a = args[0],b = args[1],c = args[2];
+        if (getVal(a)=="N"&&getVal(b)=="N"&&getVal(c)==null)
+            wrapper.add(a+" is "+" N "+b+" is N,  the "+c+" must be not null ");
         return wrapper;
     }
 
@@ -149,9 +162,9 @@ public class Checker {
      * @return
      */
     public ErrorWrapper checkYYNull(String... args) {
-        for (String arg : args) {
-            System.out.println(arg);
-        }
+        String a = args[0],b = args[1],c = args[2];
+        if (getVal(a)=="Y"&&getVal(b)=="Y"&&getVal(c)!=null)
+            wrapper.add(a+" is "+" Y "+b+" is Y,  the "+c+" must be null ");
         return wrapper;
     }
 
@@ -162,9 +175,9 @@ public class Checker {
      * @return
      */
     public ErrorWrapper checkYNNull(String... args) {
-        for (String arg : args) {
-            System.out.println(arg);
-        }
+        String a = args[0],b = args[1],c = args[2];
+        if (getVal(a)=="Y"&&getVal(b)=="N"&&getVal(c)!=null)
+            wrapper.add(a+" is "+" Y "+b+" is N,  the "+c+" must be null ");
         return wrapper;
     }
 
@@ -176,9 +189,9 @@ public class Checker {
      * @return
      */
     public ErrorWrapper checkNYNull(String... args) {
-        for (String arg : args) {
-            System.out.println(arg);
-        }
+        String a = args[0],b = args[1],c = args[2];
+        if (getVal(a)=="N"&&getVal(b)=="Y"&&getVal(c)!=null)
+            wrapper.add(a+" is "+" N "+b+" is Y,  the "+c+" must be null ");
         return wrapper;
     }
 
@@ -189,9 +202,9 @@ public class Checker {
      * @return
      */
     public ErrorWrapper checkNNNull(String... args) {
-        for (String arg : args) {
-            System.out.println(arg);
-        }
+        String a = args[0],b = args[1],c = args[2];
+        if (getVal(a)=="N"&&getVal(b)=="N"&&getVal(c)!=null)
+            wrapper.add(a+" is "+" N "+b+" is N,  the "+c+" must be null ");
         return wrapper;
     }
 

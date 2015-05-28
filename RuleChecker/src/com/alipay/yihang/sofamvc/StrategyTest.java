@@ -9,11 +9,13 @@ public class StrategyTest {
        System.out.println("main start---------------------------------");
 
         OfflineRiskDatumDO DO = new OfflineRiskDatumDO();
-
         Strategy s = new StrategyA();
         ErrorWrapper wrapper =  s.rulesCheck(DO);
-
-        System.out.println(wrapper.toString());
+        String[] results = wrapper.toString().split(";");
+        for (String result : results) {
+            System.out.println(result);
+        }
+//        System.out.println(wrapper.toString());
 
        System.out.println("main end-----------------------------------");
     }

@@ -18,18 +18,10 @@ public class StrategyA implements Strategy {
         DO.setGmtCreate(null);
         DO.setEventDate("test");
         DO.setRefNo("3");
-
-        try {
-            checker.checkNotNull("gmtCreate", "eventDate","bankIndexValue");
-
-            checker.checkMustNull("refNo","partialRepresentment","settleAmount");
-
-        } catch (NoSuchFieldException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        }
-
+        DO.setChannel("N");
+        checker.checkNotNull("gmtCreate", "eventDate", "bankIndexValue");
+        checker.checkMustNull("refNo", "partialRepresentment", "settleAmount");
+        checker.checkNNNull("channel","channel","channel");
         return checker.getWrapper();
     }
 
