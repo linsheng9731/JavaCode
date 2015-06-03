@@ -16,9 +16,10 @@ public class StrategyInterpret {
     private jsonParse jsonParse;
     private Checker checker;
 
-    public StrategyInterpret(String filepath) {
-        this.jsonParse = new jsonParse(filepath);
+    public StrategyInterpret(String config) {
+        this.jsonParse = new jsonParse(config);
     }
+
 
     public void check(OfflineRiskDatumDO DO, ErrorWrapper wrapper, String strategy, String domain) {
         this.checker = new Checker(DO, wrapper);

@@ -12,7 +12,7 @@ public class jsonParseTest {
 
         ErrorWrapper wrapper = new ErrorWrapper("");
         OfflineRiskDatumDO DO = new OfflineRiskDatumDO();
-        StrategyInterpret strategy = new StrategyInterpret("/Users/damon_lin/Documents/GitHub/JavaCode/RuleChecker/src/main/java/jackson/AE.json");
+        StrategyInterpret strategy = new StrategyInterpret(JsonConfig.jsongConfig);
         DO.setChannel("N");
         DO.setGmtModified(new Date());
 
