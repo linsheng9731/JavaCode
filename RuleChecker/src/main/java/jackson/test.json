@@ -1,0 +1,16 @@
+{
+
+  "strategyA": {
+    "checkNull": ["属性1","属性2","属性3"],
+    "checkNotNull": ["属性4","属性5","属性6"],
+    "chckNNNull": ["属性7","属性8"],
+    "chckNYNullNotNull": ["属性9","属性10","属性11","属性12"]
+  },
+
+  "strategyB": {
+    "checkNull": ["属性1","属性2","属性3"],
+    "checkNotNull": ["属性4","属性5","属性6"],
+    "chckNNNull": ["属性7","属性8"]
+  }
+
+  }

@@ -10,15 +10,11 @@ package com.alipay.yihang.sofamvc;
     replyDate;representment; partialRepresentment; settleAmount;settleCurrency; alipayDueAmount;
     merchantDueAmount;alipayPaidAmount; merchantPaidAmount;fee;operator;deleteCheck;uniqKey;
  */
-public class StrategyR0 implements Strategy {
+public class Strategy1 implements Strategy {
     @Override
     public ErrorWrapper rulesCheck(OfflineRiskDatumDO DO) {
 
         Checker checker = new Checker(DO);
-        DO.setGmtCreate(null);
-        DO.setEventDate("test");
-        DO.setRefNo("3");
-        DO.setChannel("N");
         checker.checkNotNull("gmtCreate", "eventDate", "bankIndexValue");
         checker.checkMustNull("refNo", "partialRepresentment", "settleAmount");
         checker.checkNNNull("channel","channel","channel");

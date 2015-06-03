@@ -10,8 +10,8 @@ package com.alipay.yihang.sofamvc;
     replyDate;representment; partialRepresentment; settleAmount;settleCurrency; alipayDueAmount;
     merchantDueAmount;alipayPaidAmount; merchantPaidAmount;fee;operator;deleteCheck;uniqKey;
  */
-public class Strategy1 implements Strategy {
-    @Override
+public class StrategyR0 implements Strategy {
+
     public ErrorWrapper rulesCheck(OfflineRiskDatumDO DO) {
 
         Checker checker = new Checker(DO);
