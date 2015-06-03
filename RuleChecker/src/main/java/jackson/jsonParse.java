@@ -13,7 +13,7 @@ import java.text.ParseException;
 import java.util.*;
 
 
-public class jsonParse {
+public class JsonParse {
 
 
     private static Map StrategyMap = new HashMap();
@@ -34,7 +34,7 @@ public class jsonParse {
     }
 
     // init method
-    public jsonParse(String config) {
+    public JsonParse(String config) {
         try {
             JSONArray jsonObject = new JSONArray(new JSONTokener(new StringReader((config))));
 //          jsontoList("Strategy", StrategyMap, jsonObject); // init to map

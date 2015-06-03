@@ -13,11 +13,11 @@ import java.util.Set;
  */
 public class StrategyInterpret {
 
-    private jsonParse jsonParse;
+    private JsonParse jsonParse;
     private Checker checker;
 
     public StrategyInterpret(String config) {
-        this.jsonParse = new jsonParse(config);
+        this.jsonParse = new JsonParse(config);
     }
 
 
