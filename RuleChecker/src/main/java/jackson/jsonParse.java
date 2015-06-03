@@ -1,15 +1,11 @@
 package jackson;
 
 import org.json.JSONArray;
-import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 
-import java.io.File;
-import java.io.FileReader;
 import java.io.StringReader;
 import java.lang.reflect.Field;
-import java.text.ParseException;
 import java.util.*;
 
 
@@ -20,24 +16,10 @@ public class JsonParse {
 
     private static List<Map> StrategyList = new ArrayList();
 
-    public static void main(String[] args) throws JSONException, ParseException {
-        try {
-            JSONObject jsonObject = new JSONObject(new JSONTokener(new FileReader(new File("/Users/damon_lin/Documents/GitHub/JavaCode/RuleChecker/src/main/java/jackson/tt.json"))));
-//          JSONObject jsonObject = new JSONObject(new JSONTokener(new StringReader(jsonConfig)));
-            JsontoMap("Strategy", StrategyMap, jsonObject);
-            getStrategy("strategy1");
-            System.out.println("strategy2 start-----");
-            getStrategy("strategy2");
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }
-
     // init method
     public JsonParse(String config) {
         try {
             JSONArray jsonObject = new JSONArray(new JSONTokener(new StringReader((config))));
-//          jsontoList("Strategy", StrategyMap, jsonObject); // init to map
             jsontoList("Strategy", StrategyList, jsonObject); // init to list
         } catch (Exception e) {
             e.printStackTrace();
