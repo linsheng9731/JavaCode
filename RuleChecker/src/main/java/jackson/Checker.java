@@ -53,8 +53,8 @@ public class Checker {
      * @param val
      * @return boolean
     */
-    public boolean Null(Object val){
-        val = (String)val;
+    public boolean Null(String val){
+        String arg = (String)getVal(val);
         return (val==null||(val.equals("")));
     }
 
@@ -64,8 +64,8 @@ public class Checker {
      * @param val
      * @return boolean
      */
-    public boolean NotNull(Object val){
-        val = (String)val;
+    public boolean NotNull(String val){
+        String arg = (String)getVal(val);
         return (val!=null&&(!val.equals("")));
     }
 
@@ -78,7 +78,7 @@ public class Checker {
     public ErrorWrapper checkNotNull(String... args) {
 
         for (String arg : args) {
-            if (Null(getVal(arg)))
+            if (Null(arg))
                 wrapper.add(arg + " must not null");
         }
         return wrapper;
@@ -92,7 +92,7 @@ public class Checker {
      */
     public ErrorWrapper checkMustNull(String... args) {
         for (String arg : args) {
-            if (NotNull(getVal(arg)))
+            if (NotNull(arg))
                 wrapper.add(arg + " must be null. but the value is "+getVal(arg));
         }
         return wrapper;
@@ -115,7 +115,7 @@ public class Checker {
      * @return
      */
     public ErrorWrapper checkBoth(String... args) {
-        if ((NotNull(getVal(args[0])) && Null((args[1]))) || (Null(getVal(args[0])) && NotNull((args[1]))))
+        if ((NotNull(args[0]) && Null(args[1])) || (Null(args[0]) && NotNull(args[1])))
             wrapper.add(args[0] + " and " + args[1] + " must both be null or both not null");
         return wrapper;
     }
@@ -127,7 +127,7 @@ public class Checker {
      * @return
      */
     public ErrorWrapper checkOr(String... args) {
-        if ((Null(getVal(args[0])) && Null(getVal(args[1]))))
+        if ((Null(args[0]) && Null(args[1])))
             wrapper.add(args[0] + " or " + args[1] + " must be not null ");
         return wrapper;
     }
@@ -142,7 +142,7 @@ public class Checker {
     public ErrorWrapper checkYNotNull(String... args) {
 
         String a = args[0], b = args[1];
-        if (getVal(a).equals("Y") && Null(getVal(b)))
+        if (getVal(a).equals("Y") && Null(b))
             wrapper.add(a + " is Y " + "the " + b + " must be not null ");
         return wrapper;
     }
@@ -157,7 +157,7 @@ public class Checker {
     public ErrorWrapper checkNMustNull(String... args) {
 
         String a = args[0], b = args[1];
-        if (getVal(a).equals("N") && NotNull(getVal(b)))
+        if (getVal(a).equals("N") && NotNull(b))
             wrapper.add(a + " is N " + "the " + b + " must be null. but the value is "+getVal(b));
         return wrapper;
     }
@@ -171,7 +171,7 @@ public class Checker {
     public ErrorWrapper checkNullBothNull(String... args) {
 
         String a = args[0], b = args[1], c = args[2];
-        if (Null(getVal(a)) && (NotNull(getVal(b)) || NotNull(getVal(c))))
+        if (Null(a) && (NotNull(b) || NotNull(c)))
             wrapper.add(a + " is null " + "so " + "the " + b + " and " + c + " must both be null.but the value is "+getVal(b)+" and "+getVal(c));
         return wrapper;
     }
@@ -185,7 +185,7 @@ public class Checker {
     public ErrorWrapper checkNotNullOrNotNull(String... args) {
 
         String a = args[0], b = args[1], c = args[2];
-        if (NotNull(getVal(a)) && (Null(getVal(b)) && Null(getVal(c))))
+        if (NotNull(a) && (Null(b) && Null(c)))
             wrapper.add(a + " is not null " + "so " + "one of the " + b + " and " + c + " must  be not null ");
         return wrapper;
     }
@@ -199,7 +199,7 @@ public class Checker {
     public ErrorWrapper checkYYNotNull(String... args) {
 
         String a = args[0], b = args[1], c = args[2];
-        if (getVal(a).equals("Y") && getVal(b).equals("Y") && Null(getVal(c)))
+        if (getVal(a).equals("Y") && getVal(b).equals("Y") && Null(c))
             wrapper.add(a + " and " + b + "are both Y,  the " + c + " must be not null ");
         return wrapper;
     }
@@ -212,7 +212,7 @@ public class Checker {
      */
     public ErrorWrapper checkYNNotNull(String... args) {
         String a = args[0], b = args[1], c = args[2];
-        if (getVal(a).equals("Y") && getVal(b).equals("N") && Null(getVal(c)))
+        if (getVal(a).equals("Y") && getVal(b).equals("N") && Null(c))
             wrapper.add(a + " is " + " Y " + b + " is N,  the " + c + " must be not null ");
         return wrapper;
     }
@@ -225,7 +225,7 @@ public class Checker {
      */
     public ErrorWrapper checkNYNotNull(String... args) {
         String a = args[0], b = args[1], c = args[2];
-        if (getVal(a).equals("N") && getVal(b).equals("Y") && Null(getVal(c)))
+        if (getVal(a).equals("N") && getVal(b).equals("Y") && Null(c))
             wrapper.add(a + " is " + " N " + b + " is N,  the " + c + " must be not null ");
         return wrapper;
     }
@@ -238,7 +238,7 @@ public class Checker {
      */
     public ErrorWrapper checkNNNotNull(String... args) {
         String a = args[0], b = args[1], c = args[2];
-        if (getVal(a).equals("N") && getVal(b).equals("N") && Null(getVal(c)))
+        if (getVal(a).equals("N") && getVal(b).equals("N") && Null(c))
             wrapper.add(a + " is " + " N " + b + " is N,  the " + c + " must be not null ");
         return wrapper;
     }
@@ -252,7 +252,7 @@ public class Checker {
      */
     public ErrorWrapper checkYYNull(String... args) {
         String a = args[0], b = args[1], c = args[2];
-        if (getVal(a).equals("Y") && getVal(b).equals("Y") && NotNull(getVal(c)))
+        if (getVal(a).equals("Y") && getVal(b).equals("Y") && NotNull(c))
             wrapper.add(a + " is " + " Y " + b + " is Y,  the " + c + " must be null.but the value is "+getVal(c));
         return wrapper;
     }
@@ -265,7 +265,7 @@ public class Checker {
      */
     public ErrorWrapper checkYNNull(String... args) {
         String a = args[0], b = args[1], c = args[2];
-        if (getVal(a).equals("Y") && getVal(b).equals("N") && NotNull(getVal(c)))
+        if (getVal(a).equals("Y") && getVal(b).equals("N") && NotNull(c))
             wrapper.add(a + " is " + " Y " + b + " is N,  the " + c + " must be null.but the value is "+getVal(c));
         return wrapper;
     }
@@ -279,7 +279,7 @@ public class Checker {
      */
     public ErrorWrapper checkNYNull(String... args) {
         String a = args[0], b = args[1], c = args[2];
-        if (getVal(a).equals("N") && getVal(b).equals("Y") && NotNull(getVal(c)))
+        if (getVal(a).equals("N") && getVal(b).equals("Y") && NotNull(c))
             wrapper.add(a + " is " + " N " + b + " is Y,  the " + c + " must be null.but the value is "+getVal(c));
         return wrapper;
     }
@@ -292,7 +292,7 @@ public class Checker {
      */
     public ErrorWrapper checkNNNull(String... args) {
         String a = args[0], b = args[1], c = args[2];
-        if (getVal(a).equals("N") && getVal(b).equals("N") && NotNull(getVal(c)))
+        if (getVal(a).equals("N") && getVal(b).equals("N") && NotNull(c))
             wrapper.add(a + " is " + " N " + b + " is N,  the " + c + " must be null.but the value is "+getVal(c));
         return wrapper;
     }
@@ -305,7 +305,7 @@ public class Checker {
      */
     public ErrorWrapper checkNNullNotNull(String... args) {
         String a = args[0], b = args[1], c = args[2];
-        if (getVal(a) .equals("N") && Null(getVal(b)) && Null(getVal(c)))
+        if (getVal(a) .equals("N") && Null(b) && Null(c))
             wrapper.add(a + " is " + " N " + b + " is null,  the " + c + " must be null.but the value is "+getVal(c));
         return wrapper;
     }
@@ -318,7 +318,7 @@ public class Checker {
      */
     public ErrorWrapper checkYYOrNotNull(String... args) {
         String a = args[0], b = args[1], c = args[2], d = args[3];
-        if (getVal(a).equals("Y") && getVal(b).equals("Y") && (Null(getVal(c)) && Null(getVal(d))))
+        if (getVal(a).equals("Y") && getVal(b).equals("Y") && (Null(c) && Null(d)))
             wrapper.add(a + " is " + " Y " + b + " is Y, one of the " + c + " and " + d + " must not be null ");
         return wrapper;
     }
@@ -332,7 +332,7 @@ public class Checker {
      */
     public ErrorWrapper checkNNullOrNotNull(String... args) {
         String a = args[0], b = args[1], c = args[2], d = args[3];
-        if (getVal(a).equals("N") && Null(getVal(b)) && (Null(getVal(c)) && Null(getVal(d))))
+        if (getVal(a).equals("N") && Null(b) && (Null(c) && Null(d)))
             wrapper.add(a + " is " + " N " + b + " is null, one of the " + c + " and " + d + " must not be null ");
         return wrapper;
     }
