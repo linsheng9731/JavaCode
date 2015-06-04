@@ -14,6 +14,7 @@ public class jsonParseTest {
         OfflineRiskDatumDO DO = new OfflineRiskDatumDO();
         StrategyInterpret strategy = new StrategyInterpret(JsonConfig.jsongConfig);
         DO.setChannel("N");
+        DO.setSettleAmount("N");
         DO.setGmtModified(new Date());
 
         String domain = "TW";
