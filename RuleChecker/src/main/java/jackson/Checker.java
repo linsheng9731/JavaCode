@@ -149,7 +149,7 @@ public class Checker {
 
 
     /**
-     * N  => Not Null Rule 7
+     * N  => Must Null Rule 7
      *
      * @param args
      * @return
@@ -157,7 +157,7 @@ public class Checker {
     public ErrorWrapper checkNMustNull(String... args) {
 
         String a = args[0], b = args[1];
-        if (getVal(a).equals("N") && Null(getVal(b)))
+        if (getVal(a).equals("N") && NotNull(getVal(b)))
             wrapper.add(a + " is N " + "the " + b + " must be null ");
         return wrapper;
     }
