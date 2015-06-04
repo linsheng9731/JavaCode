@@ -84,8 +84,8 @@
       <file leaf-file-name="Checker.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/jackson/Checker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.1868932">
-              <caret line="159" column="51" selection-start-line="159" selection-start-column="51" selection-end-line="159" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.30825242">
+              <caret line="326" column="7" selection-start-line="326" selection-start-column="7" selection-end-line="326" selection-end-column="7" />
               <folding>
                 <element signature="e#367#368#0" expanded="true" />
                 <element signature="e#397#398#0" expanded="true" />
@@ -746,12 +746,12 @@
       <updated>1432709059579</updated>
       <workItem from="1432709062863" duration="6568000" />
       <workItem from="1432974362630" duration="1438000" />
-      <workItem from="1433072131611" duration="55096000" />
+      <workItem from="1433072131611" duration="55390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63102000" />
+    <option name="totallyTimeSpent" value="63396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -1339,8 +1339,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/jackson/Checker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.1868932">
-          <caret line="159" column="51" selection-start-line="159" selection-start-column="51" selection-end-line="159" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.30825242">
+          <caret line="326" column="7" selection-start-line="326" selection-start-column="7" selection-end-line="326" selection-end-column="7" />
           <folding>
             <element signature="e#367#368#0" expanded="true" />
             <element signature="e#397#398#0" expanded="true" />
