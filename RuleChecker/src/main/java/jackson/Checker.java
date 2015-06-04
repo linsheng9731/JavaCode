@@ -44,7 +44,7 @@ public class Checker {
         } finally {
 
         }
-        return null;
+        return new String("");
     }
 
     /**
