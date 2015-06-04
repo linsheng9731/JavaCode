@@ -55,7 +55,7 @@ public class Checker {
     */
     public boolean Null(String val){
         String arg = (String)getVal(val);
-        return (val==null||(val.equals("")));
+        return (arg==null||(arg.equals("")));
     }
 
     /**
@@ -66,7 +66,7 @@ public class Checker {
      */
     public boolean NotNull(String val){
         String arg = (String)getVal(val);
-        return (val!=null&&(!val.equals("")));
+        return (arg!=null&&(!arg.equals("")));
     }
 
     /**
